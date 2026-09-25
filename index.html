@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Headbanger Tycoon</title>
+  <meta name="description" content="Build a garage band into a metal legend. A pixel-art music tycoon game for Android." />
+  <meta property="og:title" content="Headbanger Tycoon" />
+  <meta property="og:description" content="Build a garage band into a metal legend. A pixel-art music tycoon game." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root {
+      --bg: #0c0a10;
+      --panel: #16131d;
+      --ink: #f3eefb;
+      --muted: #9a90ac;
+      --accent: #f2d64a;
+      --accent2: #15e0a0;
+      --danger: #e23b4e;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background:
+        radial-gradient(1200px 600px at 50% -10%, #241a33 0%, transparent 60%),
+        var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, system-ui, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 72px 20px 40px;
+      text-align: center;
+    }
+    .eyebrow {
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    h1 {
+      font-size: clamp(2.4rem, 8vw, 4rem);
+      margin: 0.3em 0 0.2em;
+      font-weight: 800;
+      line-height: 1.02;
+      text-shadow: 0 2px 24px rgba(242, 214, 74, 0.25);
+    }
+    .tagline {
+      font-size: clamp(1.05rem, 3.4vw, 1.3rem);
+      color: var(--muted);
+      max-width: 30ch;
+      margin: 0 auto 2rem;
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6em;
+      background: linear-gradient(135deg, var(--accent) 0%, #f4a93b 100%);
+      color: #1a1206;
+      font-weight: 800;
+      font-size: 1.05rem;
+      text-decoration: none;
+      padding: 0.9em 1.6em;
+      border-radius: 999px;
+      box-shadow: 0 8px 30px rgba(242, 214, 74, 0.35);
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+    }
+    .cta:hover { transform: translateY(-2px); box-shadow: 0 12px 38px rgba(242, 214, 74, 0.5); }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 56px;
+      text-align: left;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+    .card h3 { margin: 0 0 0.4em; font-size: 1.05rem; color: var(--accent2); }
+    .card p { margin: 0; color: var(--muted); font-size: 0.94rem; }
+    footer {
+      text-align: center;
+      padding: 28px 20px 40px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--ink); }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Pixel-Art Music Tycoon</p>
+    <h1>Headbanger Tycoon</h1>
+    <p class="tagline">Take a garage band from its first gig to metal legend.</p>
+
+    <a class="cta" href="https://play.google.com/store/apps/details?id=com.headbangertycoon.headbanger_tycoon">
+      ▶ Get it on Google Play
+    </a>
+
+    <section class="features">
+      <div class="card">
+        <h3>Write the hits</h3>
+        <p>Craft songs, drop singles and albums, and climb from the garage to the arena.</p>
+      </div>
+      <div class="card">
+        <h3>Build a legacy</h3>
+        <p>Chase feats, weather genre trends, and pivot your sound to win new crowds.</p>
+      </div>
+      <div class="card">
+        <h3>Play your way</h3>
+        <p>Free to play with optional ads. One-time purchase to go ad-free, forever.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Gabriel Bertollo ·
+    <a href="privacy-policy.html">Privacy Policy</a> ·
+    <a href="mailto:gabrielbertollo.gb@gmail.com">Contact</a>
+  </footer>
+</body>
+</html>
